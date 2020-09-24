@@ -1,0 +1,137 @@
+{% load static %}
+<html>
+<head>
+    <title>Venhub | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" href="{% static 'img/tabicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Righteous&family=Russo+One&display=swap" rel="stylesheet">  
+
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <header id="header">
+        <div class="row d-md-flex p-2 justify-content-md-between">
+            <div class="col-md-6 p-2">
+                <div class="mx-auto text-center">
+                    <h3 class="text-crimson text-bold text-center p-2">
+                        Search for a vendor
+                    </h3>
+                </div>
+                <div class="mx-auto text-center p-2">
+                    <button class="text-cener mx-auto btn btn-danger">
+                        Search Event Vendors
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="mx-auto text-center">
+                    <h3 class="text-crimson text-bold text-center p-2">
+                        Earn money being a vendor
+                    </h3>
+                </div>
+                <div class="mx-auto text-center p-2">
+                    <button class="text-cener mx-auto btn btn-danger">
+                        Be a Vendor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <section id="promovideo">
+        <div class="videocon p-5">
+            <div class="embed-responsive embed-responsive-16by9" style="width: 100%; height: 400px;">
+                <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>              
+        </div>
+    </section>
+
+
+    <section id="slidersec">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-white">
+                    <div style="height: 100%;" class="row d-md-flex justify-content-md-between">
+                        <div class="p-2 col-md-6 swiper-content-part">
+                            <img class="image-fluid" src="{% static 'img/phone.png' %}" alt="">
+                        </div>
+                        <div class="p-2 col-md-6 pt-md-5 swiper-content-part">
+                            <h2 class="text-header text-bold mt-md-5">
+                                Venhub is your one stop shop to find, enquire and book any event vendor based on reviews, location and price for any event, personal or corporate.
+                            </h2>
+                            <h6 class="text-bold text-info mt-3">
+                                Sign up to be alerted of our launch on the app store
+                            </h6>
+                            <button type="button" class="btn btn-info" style="height: 50px;">
+                                Sign up 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white">
+                    <div style="height: 100%;" class="row d-md-flex justify-content-md-between">
+                        <div class="p-2 col-md-6 swiper-content-part">
+                            <img class="image-fluid" src="{% static 'img/phone.png' %}" alt="">
+                        </div>
+                        <div class="p-2 col-md-6 pt-md-5 swiper-content-part">
+                            <h2 class="text-header text-bold mt-md-5">
+                                Venhub is a platform for vendors to increase their visibility keep all inquiries, bookings, convensations and payments of clients in one place sa well as view analytics about their business.
+                            </h2>
+                            <h6 class="text-bold text-info mt-3">
+                                Sign up to be alerted of our launch on the app store
+                            </h6>
+                            <button type="button" class="btn btn-info" style="height: 50px;">
+                                Sign up 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </section>
+
+
+
+   
+
+</body>
+<script>
+   var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+</html>

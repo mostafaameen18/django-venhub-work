@@ -1,0 +1,88 @@
+{% load static %}
+<html>
+<head>
+    <title>Venhub | Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" href="{% static 'img/tabicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-free.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/fontawesome.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    {% include 'navbar.html' %}
+
+
+    <header id="header">
+        <div class="row d-md-flex p-2 justify-content-md-between">
+            <div class="col-md-6 p-2 mt-3">
+                <h2 class="text-center text-header">
+                    We are always excited to hear from you.
+                    <br/>
+                    Feel free to contact us, even it's just for saying hi :)
+                </h2>
+            </div>
+            <div class="col-md-6 p-2">
+                <form id="contactform" class="contactform p-2" method="post" action="">
+                    <div class="form-group">
+                        <label for="name" class="text-crimson text-bold">Name*</label>
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-crimson text-bold">Email*</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="text-crimson text-bold">Message*</label>
+                        <textarea class="form-control" type="text" id="message" name="message" placeholder="Enter your message..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <section id="signupsec">
+        
+        <div style="height: 100%;" class="row d-md-flex justify-content-md-between">
+            <div class="p-2 col-md-6 swiper-content-part">
+                <img class="image-fluid" src="{% static 'img/phone.png' %}" alt="">
+            </div>
+            <div class="p-2 col-md-6 pt-md-5 swiper-content-part">
+                <h2 class="text-header text-bold mt-md-5">
+                    Sign up for Venhub Beta version<br/>for free!
+                </h2>
+                <button type="button" class="btn btn-info" style="height: 50px;">
+                    Sign up 
+                </button>
+            </div>
+        </div>
+                
+    </section>
+
+
+
+   
+
+</body>
+<script>
+   
+</script>
+</html>

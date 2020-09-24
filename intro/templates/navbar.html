@@ -1,0 +1,26 @@
+{% load static %}
+<nav class="main-navbar navbar navbar-expand-md sticky-top justify-content-between">
+    <a class="navbar-brand" style="width: 200px; height: 100%;" href="index.html">
+        <img class="img-fluid" src="{% static 'img/transparent.png' %}" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fas fa-bars text-crimson"></i></button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'homepage' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'clients' %}">Find a vendor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'vendors' %}">Be a vendor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
